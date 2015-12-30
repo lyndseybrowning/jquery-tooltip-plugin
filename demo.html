@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>jQuery Tooltip Plugin - Demo </title>
+  <title>jQuery Tooltip Plugin</title>
   <meta name="description" content="jQuery Toolip Plugin - Demo ">
   <meta name="author" content="Lyndsey Browning">
-  <link rel="stylesheet" href="styles.css">  
+  <link rel="stylesheet" href="styles.css">
   <!--[if gte IE 9]><!-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>         
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <!--<![endif]-->
   <!--[if lt IE 9]>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 <body>
-	<img src="http://i42.tinypic.com/2q85aio.png" class="tooltip" title="This is a tooltip!" />
-	<img src="http://i42.tinypic.com/2q85aio.png" class="tooltip" title="This is a second tooltip!" />
-    
-    <script>		
-		$(function() {
-			$('.tooltip').lbTooltip();
-		});	
+	  <div class="tooltip" title="This is a tooltip!"> Tooltip 1 </div>
+	  <div class="tooltip" title="This is a second tooltip!"> Tooltip 2 </div>
+
+    <script src="tooltip.js"></script>
+    <script>
+  		$(function() {
+  			$('.tooltip').tooltip();
+  		});
 	</script>
 </body>
 </html>
